@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <style>
+
+        body{
+            background-color: #6853dd;
+            margin-left: 33%;
+        }        
+
+        h1{
+            font-family: 'Mynerve', cursive;
+            font-size: 30px;
+            margin-left: 5%;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            
+        }
+
+
+        .formulario {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .formulario label {
+            width: 100%;
+            float: left;
+            margin-bottom: 15px;
+        }
+
+        .formulario label span {
+            font-size: 1em;
+            color: #17badf;
+            float: left;
+            margin-bottom: 5px;
+            font-family: 'open_sansregular';
+        }
+
+        .formulario .campo {
+            width: 400px;
+            font-size: 1.2em;
+            color: #0e0904;
+            font-family: 'open_sansregular';
+            outline: none;
+            border: 1px #416931 solid;
+            border-radius: 3px;
+            padding: 0.6em;
+            transition: 0.5s;
+        }
+
+        .formulario .campo:focus {
+            box-shadow: 0 0 4px 0px  rgb(66, 211, 36);
+            border: 1px rgb(66, 211, 36) solid;
+            color: black;
+        }
+
+        .formulario .btn-enviar {
+            width: 160px;
+            float: left;
+            margin-left: 13%;
+            background-color: #3eee08;
+            color: #050b38;
+            border: 1px #152f4d solid;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 0.4em 1em;
+            font-size: 1.5em;
+            font-family: 'open_sansregular';
+            
+            
+        }
+
+        .info{
+            font-family: 'Inconsolata', monospace;
+            font-size: 20px;
+            color: #fff;
+            margin-left: 3%;
+            padding: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+            <div class="logo-texto">
+                <h1>Formulário de Reservas</h1>
+            </div>
+    </header>
+
+    <main>
+        <div class="coluna">
+
+            <form method="post" action="#" class="formulario">
+
+                <label>
+
+                    <input type="text" name="nome" class="campo" placeholder="Nome" required="">
+
+                </label>
+
+                <label>
+
+                    <input type="text" name="email" class="campo" placeholder="E-mail" required="">
+
+                </label>
+
+                <label>
+
+                    <input type="text" name="assunto" class="campo" placeholder="Assunto" required="">
+
+                </label>
+
+                <label>
+
+                    <textarea name="mensagem" class="campo" placeholder="Deixe sua mensagem" rows="3"
+                        required=""></textarea>
+
+                </label>
+
+                <label>
+
+                    <input type="hidden" name="acao" value="enviar">
+                    <button class="btn-enviar" title="Enviar">Enviar</button>
+
+                </label>
+
+            </form>
+
+        </div><!---Div Coluna-->
+
+
+        <div class="coluna">
+
+            <div class="info">
+
+                <p><i class="icon icon-mail-3"></i> E-mail: idalbalinda@gmail.com</p>
+                <p><i class="icon icon-whatsapp"></i> Whatsap: (11) 98079-1008</p>
+                <p><i class="icon icon-pin-1"></i> Local: Rua Salvador de Freitas 31</p>
+                <p><i class="icon icon-calendar"></i> Atendimento: Segunda a Sexta</p>
+                <p><i class="icon icon-clock-2"></i> Das 9:00 às 18:00</p>
+
+            </div>
+
+    </main>
+
+
+
+</body>
+
+</html>
